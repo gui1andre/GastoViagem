@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_distance"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Distância"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total de quilômetros"
+        android:gravity="center_horizontal"
+        android:textColor="@color/grey"/>
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="Preço"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preço por litro"
+        android:gravity="center_horizontal"
+        android:textColor="@color/grey"/>
+
+    <EditText
+        android:id="@+id/edit_autonomy"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autonomia"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KMs por Litro"
+        android:gravity="center_horizontal"
+        android:textColor="@color/grey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="seu gasto total será de:"
+        android:textAllCaps="true"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/text_total_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="R$ 0"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calcular"
+        android:backgroundTint="@color/teal_700"
+        android:textAllCaps="true"/>
+
+</LinearLayout>
